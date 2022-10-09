@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD App</title>
+    <link rel="stylesheet" href="./css/navResponsiveContent.css">
+    <link rel="stylesheet" href="./css/formContent.css">
+    <link rel="stylesheet" href="./css/tableContent.css">
+    <link rel="stylesheet" href="css/alertContent.css">
+</head>
+<body>
+    <header class="navheader">
+        <nav class="navbox">
+            <a href="#" class="navlogo" aria-label="openmenu">CRUD App</a>
+            <button class="navtoggle">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path
+                        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                </svg>
+            </button>
+            <ul class="navmenu">
+                <li class="navmenuitem">
+                    <a href="#">Perfil</a>
+                </li>
+                <li class="navmenuitem">
+                    <a href="#">Crear inventario</a>
+                </li>
+                <li class="navmenuitem">
+                    <a href="#">Contacto</a>
+                </li>
+                <li class="navmenuitem">
+                    <a href="#">Ajustes</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="alt-one" class="alert rmvalert">
+        Alert
+    </div>
+    <main>
+        <div class="databox">
+            <form id="formbox" action="" method="">
+                <h2>Add Employee</h2>
+                <div>
+                    <input id="name" class="textfield" name="empname" autocomplete="off" type="text"
+                        placeholder="Enter employee name">
+                </div>
+                <div>
+                    <input id="code" class="textfield" name="empcode" autocomplete="off" type="text"
+                        placeholder="Enter employee code">
+                </div>
+                <div>
+                    <textarea id="description" class="textdesc" name="descname" rows="2" type="text"
+                        placeholder="Enter description"></textarea>
+                </div>
+                <div>
+                    <button class="formbutton" type="submit">Save</button>
+                </div>
+            </form>
+        </div>
+        <div class="boxtab">
+            <table id="employeelist">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Code</th>
+                        <th>Description</th>
+                        <th>Options</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="js/app.js"></script>
+    <script src="js/barMenu.js"></script>
+    <script src="js/closePopUp.js"></script>
+</body>
+</html>
